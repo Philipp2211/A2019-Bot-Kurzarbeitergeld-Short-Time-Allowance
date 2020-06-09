@@ -38,8 +38,48 @@ Then you need to follow the instructions to download and install the Bot Agend a
 ## Import the Bot
 To import the Bot you need to execute the following steps:
 1. Launch the Community Edition Control Room by logging into your Community Edition account. 
-1. Navigate to My Bots by clicking Bots in the left panel and then select My Bots ![My Bots](/Images/My_Bots.png)
+1. Navigate to My Bots by clicking Bots in the left panel and then select My Bots. ![My Bots](/Images/My_Bots.png)
+1. Click Import Bots in the top right corner. ![Import Bots](/Images/Import_Bots.png)
+1. Click Browse and select the Bot (The whole Zip file: "A2019_Bot_Export_Kurzarbeitergeld.zip")  you would like to import. ![Browse Files](/Images/Browse_Files.png)
+
+## Input Data
+Required input file:
+Excel file filled with all required employee data
+
+If you need to correct a Kug payroll list that has already been submitted, you must correct this manually in the existing payroll list. If employees use the factor procedure, these employees should also be listed in the Excel file, and columns 7-10 should be added manually to the saved PDF after the bot has finished.
+Please note that employees who are registered under a different company number in the DEUEV notification must be entered manually in column 2. Please do not enter them in the Excel template.
+
+
+The following fields in the Excel template are mandatory fields and must be filled in:
+* First name 
+* Last name
+* Insurance number
+* Kug downtime 
+* Sick pay hours
+* Target remuneration (unrounded)
+* Actual remuneration (not rounded)
+* Income tax class 1-6 (Arabic spelling)
+* Power set (1 or 2)
+* Region: East or West
+
+The following data are optional and only need to be filled in if the employee is affected, so please leave these fields blank
+* Factor (format: 0.xxx)(if employee has chosen factor method, otherwise empty)
+* Has the worker been in quarantine during the reference period (yes or empty)
 
 
 ## Execute the Bot
+* An Excel template is provided by us. Please save it on your local computer. 
+* Enter the required personnel data from your HR systems into the Excel template. 
+* One line is entered in Excel for each employee (mandatory data must not remain empty). 
+* As an example, the Excel template already contains a data set from Max Mustermann, which you should replace with your real employees.
+* Finally, please save the Excel file and close Excel. 
+* Open the bot "KUG 108 calculation".
+* To run the bot, click on "Run" in the upper right corner.
+* In the first dialog, select the completed Excel file on your local computer as the source of the data entry.
+* In the next dialog you choose an output directory for the completed KUG 108 forms. 
+* Enter the 8-digit "root number" of your company, then your 4-digit department ID.
+* Finally, enter the accounting month in the following German notation: "April 2020" ...
+* Now the bot automatically fills the PDF forms within seconds with all calculated values for all employees in your Excel file (except column 7-10 for employees with factor methods).
+* If you have applied for KUG for employees with factor methods, you will see a note that columns 7-10 have to be added manually to the PDF forms. The relevant employees are automatically highlighted in red in Excel. 
+* As soon as the bot is ready, the PDF files will appear in your output directory. After a visual check, send these PDF files to the Federal Employment Agency.
 
