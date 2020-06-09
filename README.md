@@ -31,9 +31,9 @@ If you decide to use the A2019 Community Edition you need to register on the fol
 
 ## Install the Bot Agent/Register your Device
 After registration you can login to the A2019 Community Edition ([LINK](https://community.cloud.automationanywhere.digital/#/login?next=/index)).
-To enable A2019 to execute Bots on your local device you need to click on the Laptop symbol in the top right corner and then on "Connect devise". 
-Then you need to follow the instructions to download and install the Bot Agend and connect you local devise.
-![Register Devise](/Images/Register_Devise.png)
+To enable A2019 to execute Bots on your local device you need to click on the Laptop symbol in the top right corner and then on "Connect device". 
+Then you need to follow the instructions to download and install the Bot Agent and connect you local device.
+![Register Device](/Images/Register_Device.png)
 
 ## Import the Bot
 To import the Bot you need to execute the following steps:
