@@ -32,7 +32,7 @@ If you decide to use the A2019 Community Edition you need to register on the fol
 ## Install the Bot Agent/Register your Device
 After registration you can login to the A2019 Community Edition ([LINK](https://community.cloud.automationanywhere.digital/#/login?next=/index)).
 To enable A2019 to execute Bots on your local device you need to click on the Laptop symbol in the top right corner and then on "Connect device". 
-Then you need to follow the instructions to download and install the Bot Agent and connect you local device.
+Then you need to follow the instructions to download and install the Bot Agent and to connect your local device.
 ![Register Device](/Images/Register_Device.png)
 
 ## Import the Bot
@@ -44,7 +44,7 @@ To import the Bot you need to execute the following steps:
 
 ## Input Data
 Required input file:
-Excel file filled with all required employee data
+Excel file filled with all required employee data (Template "Kug_Liste_updated.xlsx" in this repository)
 
 If you need to correct a Kug payroll list that has already been submitted, you must correct this manually in the existing payroll list. If employees use the factor procedure, these employees should also be listed in the Excel file, and columns 7-10 should be added manually to the saved PDF after the bot has finished.
 Please note that employees who are registered under a different company number in the DEUEV notification must be entered manually in column 2. Please do not enter them in the Excel template.
